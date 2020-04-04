@@ -30,9 +30,12 @@ if(mysqli_connect_errno())
 		$password=$_POST['pwd'];
 		$gender=$_POST['gen'];
 		$member=$_POST['team'];
-		$teams=implode(",", $member);
+		if(!empty($member))
+                {
+                        	$teams=implode(",", $member);
+                }
 		$study_year=$_POST['study'];
-		if(empty($name)||empty($password)||empty($gender)||empty($teams)||empty($study_year))
+		if(empty($name)||empty($password)||empty($gender)||empty($member)||empty($study_year))
 		{
 			echo'<script>alert("Please fill the form completely!")</script>';
 		}
