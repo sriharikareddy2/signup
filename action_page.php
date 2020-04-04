@@ -37,7 +37,7 @@ if(mysqli_connect_errno())
 			echo'<script>alert("Please fill the form completely!")</script>';
 		}
 		else{
-			$sql="INSERT INTO swg_info(Name,Password,Gender,Teams,Year_of_study)"."VALUES('$name','$password','$gender','$teams','study_year')";
+			$sql="INSERT INTO swg_info(Name,Password,Gender,Teams,Year_of_study)"."VALUES('$name','$password','$gender','$teams','$study_year')";
 			$res=mysqli_query($conn,$sql);
 			if(!$res)
 			{
