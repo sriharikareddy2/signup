@@ -51,7 +51,7 @@ if(mysqli_connect_errno())
 	}
 	else
 	{
-		echo'script>alert("Form not submitted Properly!")</script>';
+		echo'<script>alert("Form not submitted Properly!")</script>';
 	}
 	?>
 </body>
