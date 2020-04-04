@@ -1,8 +1,8 @@
 <?php
-$host="localhost";
-$user="root";
-$password="";
-$dbname="swginfo";
+$host="fdb22.awardspace.net";
+$user="3380917_swginfo";
+$password="1a2b3c4d5e6f";
+$dbname="3380917_swginfo";
 $conn=mysqli_connect($host,$user,$password,$dbname);
 if(mysqli_connect_errno())
 {
